@@ -18,7 +18,9 @@
 }
 
 header {
-    height: 2rem;
+    $logoMaxHeight: 2rem;
+
+    min-height: $logoMaxHeight;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -27,7 +29,12 @@ header {
 
     .App-logo {
         height: 100%;
+        max-height: $logoMaxHeight;
         pointer-events: none;
+    }
+
+    h1 {
+        margin: 0;
     }
 }
 
